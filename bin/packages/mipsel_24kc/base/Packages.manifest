@@ -229,6 +229,18 @@ Size: 9025
 SHA256sum: c268510b081d684b53f2b9d1f5ee5a7eae7c75966537cf2615a3b7f9da2a4f0b
 Description:  OpenWrt JSON filter utility
 
+Package: kcptun-client
+Version: 20190515-2
+Depends: libc
+Source: package/lean/kcptun
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 1794513
+Filename: kcptun-client_20190515-2_mipsel_24kc.ipk
+Size: 1791306
+SHA256sum: 1a653a382e7830b3f9d6ab8d249321b388c20e48b240e81b2adeb4617f1901dd
+Description:  Kcptun is a Fast and Reliable ARQ Protocol tunnel
+
 Package: libblobmsg-json
 Version: 2018-07-25-c83a84af-2
 Depends: libc, libjson-c, libubox
@@ -319,6 +331,21 @@ Description:  Lua is a powerful light-weight programming language designed for e
  applications. Lua is also frequently used as a general-purpose, stand-alone 
  language. Lua is free software.
  This package contains the Lua shared libraries, needed by other programs.
+
+Package: libmbedtls
+Version: 2.14.1-1
+Depends: libc
+Source: package/libs/mbedtls
+License: GPL-2.0+
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 175744
+Filename: libmbedtls_2.14.1-1_mipsel_24kc.ipk
+Size: 176243
+SHA256sum: 6bd8020a6cbea2f30ce7828e2d3e2aba37834c653475da553291f8433f52f3ec
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the mbedtls library.
 
 Package: libmnl
 Version: 1.0.4-1
@@ -665,15 +692,27 @@ Description:  luci-app-ramfree
 
 Package: luci-app-ssr-plus
 Version: 1-100
-Depends: libc, shadowsocksr-libev-alt, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, bash, pdnsd-alt, wget
+Depends: libc, shadowsocksr-libev-alt, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, bash, pdnsd-alt, wget, shadowsocks-libev-ss-redir, v2ray, kcptun-client, shadowsocksr-libev-server, shadowsocksr-libev-ssr-local
 Source: package/lean/luci-app-ssr-plus
 Section: luci
 Architecture: all
 Installed-Size: 96502
 Filename: luci-app-ssr-plus_1-100_all.ipk
-Size: 96546
-SHA256sum: 17ce4bd1f198b7da52796fd26e00a08d3f79b7848205cf3b786cfd54064b8b4f
+Size: 96581
+SHA256sum: 0bdd94f2520fe39bf6db2ad8b9f48660f849200dd5e7f6d72da855a3ced0d4b9
 Description:  SS/SSR/V2Ray LuCI interface
+
+Package: luci-app-ttyd
+Version: 1.0-1
+Depends: libc, ttyd
+Source: package/lean/luci-app-ttyd
+Section: luci
+Architecture: all
+Installed-Size: 925
+Filename: luci-app-ttyd_1.0-1_all.ipk
+Size: 1608
+SHA256sum: 310e45ea40332faaf051d74d488145d2df58a3daaf5f3916fcc0e68b6b7dc372
+Description:  LuCI support for ttyd
 
 Package: luci-app-usb-printer
 Version: 1.0-2
@@ -832,6 +871,18 @@ Filename: luci-i18n-ramfree-zh-cn_1.0-1_all.ipk
 Size: 1225
 SHA256sum: 5a2ac9b91c11f34d2cc47c47c32a9d42734ddc7becf0e75824bac9bc66cc6c7a
 Description:  Translation for luci-app-ramfree - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-ttyd-zh-cn
+Version: 1.0-1
+Depends: libc, luci-app-ttyd
+Source: package/lean/luci-app-ttyd
+Section: luci
+Architecture: all
+Installed-Size: 424
+Filename: luci-i18n-ttyd-zh-cn_1.0-1_all.ipk
+Size: 1221
+SHA256sum: a593ccc67d8895cb0e73c7d45fd1955736c97f0a956a264d7b0b701f68c4497d
+Description:  Translation for luci-app-ttyd - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-usb-printer-zh-cn
 Version: 1.0-2
@@ -1052,6 +1103,34 @@ Size: 99980
 SHA256sum: 6103e8deebaede64322c4548c97dd2ec40360309f626d41fa6ca092134fbf7d1
 Description:  Lightweight Secured Socks5 Proxy
 
+Package: shadowsocksr-libev-server
+Version: 2.5.6-3
+Depends: libc, libopenssl, libpthread, libpcre, zlib
+Source: package/lean/shadowsocksr-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 117042
+Filename: shadowsocksr-libev-server_2.5.6-3_mipsel_24kc.ipk
+Size: 117426
+SHA256sum: 28d4b366bf01c726fa4ed64c6151964fc97be0bcb346600df03732d51e45de33
+Description:  Lightweight Secured Socks5 Proxy
+
+Package: shadowsocksr-libev-ssr-local
+Version: 2.5.6-3
+Depends: libc, libopenssl, libpthread, libpcre, zlib
+Source: package/lean/shadowsocksr-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 106652
+Filename: shadowsocksr-libev-ssr-local_2.5.6-3_mipsel_24kc.ipk
+Size: 106893
+SHA256sum: 093587837b64e7a04772c02f038f56b580b71764a5c1244a2eb82789c031286f
+Description:  Lightweight Secured Socks5 Proxy
+
 Package: shellsync
 Version: 0.2-1
 Depends: libc, libpthread
@@ -1222,6 +1301,18 @@ Size: 12558
 SHA256sum: 8354ed2fb6d75082469c890f50fee8c4962893a5f4556aae37881c385271fa5a
 Description:  OpenWrt signature verification utility
 
+Package: v2ray
+Version: v4.19-3
+Depends: libc, ca-certificates
+Source: package/lean/v2ray
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 3379451
+Filename: v2ray_v4.19-3_mipsel_24kc.ipk
+Size: 3380781
+SHA256sum: b2998f970ddc9dc37f60828019d81bf2731e8be363644d34feb24ee7724a0b94
+Description:  V2Ray is a cross-platform proxy software
+
 Package: vlmcsd
 Version: svn1112-1
 Depends: libc, libpthread
@@ -1233,8 +1324,8 @@ Maintainer: fuyumi <280604399@qq.com>
 Architecture: mipsel_24kc
 Installed-Size: 21520
 Filename: vlmcsd_svn1112-1_mipsel_24kc.ipk
-Size: 22224
-SHA256sum: e82ff3b99d0501e1aab1256337c7610eb6efe132bdbace4a26a80b7f19cfd371
+Size: 22232
+SHA256sum: 8fa48d62be9b9e1335ea372b22c1ca45fbea897bdecfac416abe78af718ed6d0
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: vsftpd-alt

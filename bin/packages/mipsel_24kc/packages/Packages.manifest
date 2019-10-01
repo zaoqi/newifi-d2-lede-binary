@@ -85,6 +85,54 @@ Description:  You can wake up WOL compliant Computers which have been powered do
  to turn on a computer from another location over a network connection.
  ether-wake also supports WOL passwords.
 
+Package: libcap
+Version: 2.26-1
+Depends: libc
+Source: feeds/packages/libs/libcap
+License: GPL-2.0
+LicenseFiles: License
+Section: libs
+Maintainer: Paul Wassi <p.wassi@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 5946
+Filename: libcap_2.26-1_mipsel_24kc.ipk
+Size: 6669
+SHA256sum: 6cdb36f80872957fc26bef7f070dba5e29c3458fd16eb1af55538f611cdd0d2e
+Description:  Linux capabilities library
+
+Package: libcares
+Version: 1.14.0-1
+Depends: libc
+Source: feeds/packages/libs/c-ares
+License: MIT
+Section: libs
+Maintainer: Karl Palsson <karlp@etactica.com>
+Architecture: mipsel_24kc
+Installed-Size: 26572
+Filename: libcares_1.14.0-1_mipsel_24kc.ipk
+Size: 27351
+SHA256sum: 1cc3e1a401de1197df897a074ee3909e9cc592a11031e89b45dae39cbabf4b7a
+Description:  c-ares is a C library for asynchronous DNS requests (including name resolves)
+ 
+ C89 compatibility, MIT licensed, builds for and runs on POSIX, Windows,
+ Netware, Android and many more operating systems.
+ 
+
+Package: libev
+Version: 4.22-1
+Depends: libc
+Source: feeds/packages/libs/libev
+License: BSD-2-Clause
+Section: libs
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Architecture: mipsel_24kc
+Installed-Size: 20934
+Filename: libev_4.22-1_mipsel_24kc.ipk
+Size: 21681
+SHA256sum: 093d960182de33d2f8892bfab39a6ec8303b1f6b5b0723ffaaecc91947f9e597
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
 Package: libminiupnpc
 Version: 2.0.20170509-1
 Depends: libc
@@ -131,6 +179,57 @@ Filename: libpcre_8.41-2_mipsel_24kc.ipk
 Size: 78213
 SHA256sum: 729d7b0ad9ddd3d4afff80ceb97a271b8dbb9621894d0b73f2bc56bc68549e00
 Description:  A Perl Compatible Regular Expression library
+
+Package: libsodium
+Version: 1.0.16-1
+Depends: libc
+Source: feeds/packages/libs/libsodium
+License: ISC
+Section: libs
+Maintainer: Damiano Renfer <damiano.renfer@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 130688
+Filename: libsodium_1.0.16-1_mipsel_24kc.ipk
+Size: 131805
+SHA256sum: 8637902909ddf320be38dae75c31985472843bd8c6868e629cd18de31ec76d66
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: libuv
+Version: 1.19.2-1
+Depends: libc, libpthread, librt
+Source: feeds/packages/libs/libuv
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Architecture: mipsel_24kc
+Installed-Size: 53236
+Filename: libuv_1.19.2-1_mipsel_24kc.ipk
+Size: 54194
+SHA256sum: d2d3cac605a2a29d27687d52143ae7a8c389ec246efea982f27c074de633226c
+Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It
+ was primarily developed for use by Node.js, but it's also used by Luvit, Julia,
+ pyuv, and others.
+
+Package: libwebsockets-full
+Version: 2.4.1-2
+Depends: libc, zlib, libcap, libopenssl, libuv
+Provides: libwebsockets
+Source: feeds/packages/libs/libwebsockets
+License: LGPL-2.1+exception
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Karl Palsson <karlp@etactica.com>
+Architecture: mipsel_24kc
+Installed-Size: 79155
+Filename: libwebsockets-full_2.4.1-2_mipsel_24kc.ipk
+Size: 79559
+SHA256sum: d6c76b7b90d581d64371381286c2128e0a7aa9e2b8195347450f47ae2d6247e2
+Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
 
 Package: luci-app-sqm
 Version: 1.3.0-1
@@ -209,6 +308,36 @@ Size: 27943
 SHA256sum: 8824a5414d7e1d7af8886531d1141c7a1e4465c6da6825e53e557cc8d2d39fae
 Description:  PopTop pptp server
 
+Package: shadowsocks-libev-config
+Version: 3.2.1-1
+Depends: libc
+Source: feeds/packages/net/shadowsocks-libev
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: shadowsocks-libev-config_3.2.1-1_mipsel_24kc.ipk
+Size: 846
+SHA256sum: 0353dee533c1e720842b1ad4818c7b2e51059b428c4f62fc5dab1f8f8723d070
+Description:  shadowsocks-libev config scripts
+
+Package: shadowsocks-libev-ss-redir
+Version: 3.2.1-1
+Depends: libc, libcares, libev, libmbedtls, libpcre, libpthread, libsodium, shadowsocks-libev-config, zlib
+Source: feeds/packages/net/shadowsocks-libev
+License: GPL-3.0+
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 49736
+Filename: shadowsocks-libev-ss-redir_3.2.1-1_mipsel_24kc.ipk
+Size: 50546
+SHA256sum: 5e7a69c74feb28c6cf9874caa47127e581104164482ce2e8f0a33f7550631717
+Description:  shadowsocks-libev ss-redir
+
 Package: sqm-scripts
 Version: 1.3.0-1
 Depends: libc, tc, kmod-sched-core, kmod-sched-cake, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
@@ -222,6 +351,21 @@ Filename: sqm-scripts_1.3.0-1_all.ipk
 Size: 16808
 SHA256sum: a1c325fa34438aa06f28429e22bb0e4b751a6b969781f718d3683e77c0d111e0
 Description:  A set of scripts that does simple SQM configuration.
+
+Package: ttyd
+Version: 1.4.0-1
+Depends: libc, libopenssl, libjson-c, libpthread, libwebsockets-full
+Source: feeds/packages/utils/ttyd
+License: MIT
+LicenseFiles: LICENSE
+Section: utils
+Maintainer: Shuanglei Tao <tsl0922@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 146390
+Filename: ttyd_1.4.0-1_mipsel_24kc.ipk
+Size: 146957
+SHA256sum: 40fe6b609890394de5e15f44616692ca52e20c3b57e164ae2a96d45bc7b47270
+Description:  ttyd is a command-line tool for sharing terminal over the web.
 
 Package: wget
 Version: 1.19.5-1

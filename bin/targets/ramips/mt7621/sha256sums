@@ -1,4 +1,4 @@
-cf8441d84a73781d351d9995bd946e97734d31da0bab3a06f68dc4414dd8676f *config.seed
-5f5d1d568f951069eb132bca89fa3c7b82fff60dfb1fdf28c508d4d8f115703e *openwrt-ramips-mt7621-d-team_newifi-d2-initramfs-kernel.bin
-f9dc790855f766dcad2ec8c2cacdcc6a9be9f3a9c6285b4714b5c4365e3e7ce3 *openwrt-ramips-mt7621-d-team_newifi-d2-squashfs-sysupgrade.bin
-ad6b865904c02a745ff6c7f9bea7ceb3b0e73c7ccb13986a798ce41e6b178179 *openwrt-ramips-mt7621-device-d-team-newifi-d2.manifest
+03befa7e762414604be30ffd22400e362cd1931c2478ef480b5a6fb8d9d6b309 *config.seed
+286e833b8b2870853d6c9ff011969c959e0b2ae067a7010518ee1e7b128eb57e *openwrt-ramips-mt7621-d-team_newifi-d2-initramfs-kernel.bin
+1efd7254f0cbec567ddcfba704626077d89e25910b85fd5348aec27155b1c3a1 *openwrt-ramips-mt7621-d-team_newifi-d2-squashfs-sysupgrade.bin
+67f01eb1c1b87c7ee53a8a44d0e4dd4d55a520e6bd40d38fe1e8edd9c52ddcfe *openwrt-ramips-mt7621-device-d-team-newifi-d2.manifest

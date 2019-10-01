@@ -1,6 +1,28 @@
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7621=y
 CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
+CONFIG_LIBSODIUM_MINIMAL=y
+CONFIG_PACKAGE_kcptun-client=y
+CONFIG_PACKAGE_libcap=y
+CONFIG_PACKAGE_libcares=y
+CONFIG_PACKAGE_libev=y
+CONFIG_PACKAGE_libmbedtls=y
+CONFIG_PACKAGE_libsodium=y
+CONFIG_PACKAGE_libuv=y
+CONFIG_PACKAGE_libwebsockets-full=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+CONFIG_PACKAGE_shadowsocks-libev-config=y
+CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
+CONFIG_PACKAGE_shadowsocksr-libev-server=y
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
+CONFIG_PACKAGE_ttyd=y
+CONFIG_PACKAGE_v2ray=y
 # CONFIG_TARGET_ramips_mt7620_DEVICE_ArcherC20i is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_ArcherC50v1 is not set
 # CONFIG_TARGET_ramips_mt7620_DEVICE_ArcherMR200 is not set
