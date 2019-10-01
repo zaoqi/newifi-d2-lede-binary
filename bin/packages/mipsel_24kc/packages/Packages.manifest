@@ -1,0 +1,275 @@
+Package: bash
+Version: 4.4.18-2
+Depends: libc, libncurses, libreadline
+Source: feeds/packages/utils/bash
+License: GPL-3.0+
+LicenseFiles: COPYING
+Section: utils
+Maintainer: Marcel Denia <naoir@gmx.net>
+Architecture: mipsel_24kc
+Installed-Size: 256982
+Filename: bash_4.4.18-2_mipsel_24kc.ipk
+Size: 257864
+SHA256sum: 7249205ec2a37f7f21735f3adb5f98d923d4820ea759f0348920547c4336056b
+Description:  Bash is an sh-compatible command language interpreter that executes
+ commands read from the standard input or from a file. Bash also
+ incorporates useful features from the Korn and C shells (ksh and csh).
+
+Package: coreutils-base64
+Version: 8.23-3
+Depends: libc, coreutils
+Source: feeds/packages/utils/coreutils
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 17957
+Filename: coreutils-base64_8.23-3_mipsel_24kc.ipk
+Size: 18675
+SHA256sum: bd182d60a1c1ec15ed0ef5103cef7da07cc6ef2eb70c5a9d204afb26e7242e8f
+Description:  Full version of standard GNU base64 utility.
+
+Package: coreutils-nohup
+Version: 8.23-3
+Depends: libc, coreutils
+Source: feeds/packages/utils/coreutils
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 16247
+Filename: coreutils-nohup_8.23-3_mipsel_24kc.ipk
+Size: 16940
+SHA256sum: 280648e755ad7dab0cada6d9369b467e30cd8f30a881b17f053624246c08c0be
+Description:  Full version of standard GNU nohup utility.
+
+Package: coreutils
+Version: 8.23-3
+Depends: libc
+Source: feeds/packages/utils/coreutils
+Section: utils
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 105
+Filename: coreutils_8.23-3_mipsel_24kc.ipk
+Size: 915
+SHA256sum: bf6b8e6d1f500b591f4dff001795b348a86b2963700130b3b396e819d63783ef
+Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
+ available, you should consider compiling that instead as Busybox applets are
+ usually smaller, at the expense of reduced functionality.
+
+Package: ddns-scripts
+Version: 2.7.8-1
+Source: feeds/packages/net/ddns-scripts
+License: GPL-2.0
+Section: net
+Architecture: all
+Installed-Size: 14651
+Filename: ddns-scripts_2.7.8-1_all.ipk
+Size: 15714
+SHA256sum: 1d8723d7aefb3e50ce60d831021e6c60b588cc42e9b44e99ee8e10be44d69ea2
+Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
+
+Package: etherwake
+Version: 1.09-4
+Depends: libc
+Source: feeds/packages/net/etherwake
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 4873
+Filename: etherwake_1.09-4_mipsel_24kc.ipk
+Size: 5782
+SHA256sum: d5edb55df8c924306104281a593109070e649336c281a0523f606a8c8e9b6649
+Description:  You can wake up WOL compliant Computers which have been powered down to
+ sleep mode or start WOL compliant Computers with a BIOS feature.
+ WOL is an abbreviation for Wake-on-LAN. It is a standard that allows you
+ to turn on a computer from another location over a network connection.
+ ether-wake also supports WOL passwords.
+
+Package: libminiupnpc
+Version: 2.0.20170509-1
+Depends: libc
+Source: feeds/packages/net/miniupnpc
+Section: libs
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: mipsel_24kc
+Installed-Size: 17706
+Filename: libminiupnpc_2.0.20170509-1_mipsel_24kc.ipk
+Size: 18465
+SHA256sum: a87d9df875754d62581791cf7518fcad09bb0ac6105d6a1d7dff9ed1f2a074a2
+Description:  Lightweight UPnP library
+
+Package: libnatpmp
+Version: 20150609-1
+Depends: libc
+Source: feeds/packages/libs/libnatpmp
+License: BSD-3c
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
+Architecture: mipsel_24kc
+Installed-Size: 3110
+Filename: libnatpmp_20150609-1_mipsel_24kc.ipk
+Size: 4037
+SHA256sum: cc45c8e4391762e55de7e6f3b11ed1a0142650ba59888e28d681bf98ef7d6a6c
+Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
+ of the protocol for the client side. It is based on non blocking sockets and
+ all calls of the API are asynchronous. It is therefore very easy to integrate
+ the NAT-PMP code to any event driven code.
+ This package contains the shared library.
+
+Package: libpcre
+Version: 8.41-2
+Depends: libc
+Source: feeds/packages/libs/pcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: mipsel_24kc
+Installed-Size: 77403
+Filename: libpcre_8.41-2_mipsel_24kc.ipk
+Size: 78213
+SHA256sum: 729d7b0ad9ddd3d4afff80ceb97a271b8dbb9621894d0b73f2bc56bc68549e00
+Description:  A Perl Compatible Regular Expression library
+
+Package: luci-app-sqm
+Version: 1.3.0-1
+Depends: libc, lua, luci-base, sqm-scripts
+Source: feeds/packages/net/sqm-scripts
+License: GPLv2
+Section: luci
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Architecture: all
+Installed-Size: 4016
+Filename: luci-app-sqm_1.3.0-1_all.ipk
+Size: 4972
+SHA256sum: 8284e10a08ee9a6e9171775fa392b44074193caa300e042d8de5ca506574d5fe
+Description:  Luci interface for the SQM scripts queue management configuration package.
+
+Package: miniupnpd
+Version: 2.0.20170421-2
+Depends: libc, iptables, libip4tc, libuuid
+Source: feeds/packages/net/miniupnpd
+License: BSD-3-Clause
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: mipsel_24kc
+Installed-Size: 46899
+Filename: miniupnpd_2.0.20170421-2_mipsel_24kc.ipk
+Size: 47794
+SHA256sum: c6d0920b845ecea9ff90f7f24faec675419a4ed910837e3c4c0a9671515a11d8
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: nlbwmon
+Version: 2017-12-05-75accd64-1
+Depends: libc, libubox, libnl-tiny, zlib, kmod-nf-conntrack-netlink
+Source: feeds/packages/net/nlbwmon
+License: ISC
+LicenseFiles: COPYING
+Section: net
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: mipsel_24kc
+Installed-Size: 15703
+Filename: nlbwmon_2017-12-05-75accd64-1_mipsel_24kc.ipk
+Size: 16506
+SHA256sum: 2f2e9bdf96fa4d30d0323ab51a98bbed95145b151b0783de837803315b3c1b77
+Description:  LEDE Traffic Usage Monitor
+
+Package: p910nd
+Version: 0.97-5
+Depends: libc
+Source: feeds/packages/net/p910nd
+License: GPLv2
+LicenseFiles: COPYING
+Section: net
+Maintainer: Philipp Kerling <pkerling@casix.org>
+Architecture: mipsel_24kc
+Installed-Size: 5103
+Filename: p910nd_0.97-5_mipsel_24kc.ipk
+Size: 6072
+SHA256sum: 607e746160f2e421cccacaa65af3e77754a5ef80820474e47ca87ede7b9a3cd9
+Description:  p910nd is a small daemon that copies any data received on
+ the port it is listening on to the corresponding printer
+ port. It is primarily intended for diskless Linux hosts
+ running as printer drivers but there is no reason why it
+ could not be used on diskful hosts. Port 9100 is copied
+ to /dev/lp0, 9101 to /dev/lp1 and 9102 to /dev/lp2. The
+ default is port 9100 to /dev/lp0.
+
+Package: pptpd
+Version: 1.4.0-3
+Depends: libc, kmod-ppp, kmod-gre, kmod-mppe, ppp
+Source: feeds/packages/net/pptpd
+Section: net
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: mipsel_24kc
+Installed-Size: 27188
+Filename: pptpd_1.4.0-3_mipsel_24kc.ipk
+Size: 27943
+SHA256sum: 8824a5414d7e1d7af8886531d1141c7a1e4465c6da6825e53e557cc8d2d39fae
+Description:  PopTop pptp server
+
+Package: sqm-scripts
+Version: 1.3.0-1
+Depends: libc, tc, kmod-sched-core, kmod-sched-cake, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
+Source: feeds/packages/net/sqm-scripts
+License: GPLv2
+Section: net
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Architecture: all
+Installed-Size: 16007
+Filename: sqm-scripts_1.3.0-1_all.ipk
+Size: 16808
+SHA256sum: a1c325fa34438aa06f28429e22bb0e4b751a6b969781f718d3683e77c0d111e0
+Description:  A set of scripts that does simple SQM configuration.
+
+Package: wget
+Version: 1.19.5-1
+Depends: libc, libpcre, zlib, libopenssl, librt
+Source: feeds/packages/net/wget
+License: GPL-3.0+
+LicenseFiles: COPYING
+Section: net
+Maintainer: Peter Wagner <tripolar@gmx.at>
+Architecture: mipsel_24kc
+Installed-Size: 182730
+Filename: wget_1.19.5-1_mipsel_24kc.ipk
+Size: 183570
+SHA256sum: 3ccce7bb5794e883420cff00e06ae0725eaf0f78a73a7685d5cd8de4117eab87
+Description:  Wget is a network utility to retrieve files from the Web using http
+ and ftp, the two most widely used Internet protocols. It works
+ non-interactively, so it will work in the background, after having
+ logged off. The program supports recursive retrieval of web-authoring
+ pages as well as ftp sites -- you can use wget to make mirrors of
+ archives and home pages or to travel the Web like a WWW robot.
+ This package is built with SSL support.
+
+Package: wifischedule
+Version: 1-2
+Depends: libc
+Source: feeds/packages/net/wifischedule
+License: PRPL
+Section: net
+Maintainer: Nils Koenig <openwrt@newk.it> 
+Architecture: all
+Installed-Size: 3101
+Filename: wifischedule_1-2_all.ipk
+Size: 3868
+SHA256sum: cdcc064d5fe6b83d280a425b51743b4ca6a7e1866081c00e9ca9b047314d4930
+Description:  Turns WiFi on and off according to a schedule defined in UCI.
+
+Package: zerotier
+Version: 1.4.6-1
+Depends: libc, libpthread, libstdcpp, kmod-tun, ip, libminiupnpc, libnatpmp
+Source: feeds/packages/net/zerotier
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE.txt
+Section: net
+Maintainer: Moritz Warning <moritzwarning@web.de>
+Architecture: mipsel_24kc
+Installed-Size: 364334
+Filename: zerotier_1.4.6-1_mipsel_24kc.ipk
+Size: 364428
+SHA256sum: b8c0014bf58bb81fb97492f25d59de43a80db01f93e383951bf2b9c328036a1a
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
+
